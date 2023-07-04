@@ -1,0 +1,39 @@
+
+class Solution
+{
+    public:
+    void sort012(int a[], int n)
+    {
+    
+    
+    int s=0,e=n-1,curr=0;
+    
+    while(curr<=e)
+    {
+        
+     if(a[curr]==0)
+     {
+         swap(a[s],a[curr]);
+         curr++;
+         s++;
+     }
+     
+     else if(a[curr]==2)
+     {
+         swap(a[curr],a[e]);
+         e--;
+     }
+     
+     else
+     {
+         curr++;
+     }
+        
+
+    }
+    
+    }
+    
+    
+};
+
